@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <p id="count">0</p>
+        <button id="btn">Get Money</button>
+    </div>
+</body>
+<script>
+    let money = 0;
+    let count_lable = document.getElementById("count");
+    let btn = document.getElementById("btn");
+    btn.addEventListener("click",() => {
+        money += 1;
+        count_lable.innerHTML = money;
+    })
+</script>
+</html>
